@@ -1,0 +1,8 @@
+{
+  "secp256k1.sha256:02b0d85dd3634384d7fe148b4087cdf29fa24105f33228bf7787b7aaecb60bdd85": {
+    "/admin-panel.html": {
+      "hash": "sha256:c7e5af2bfe949c39af2343e1596f27fdbf22be513fd40ddc315f09b8b289abcf",
+      "nonce": "41"
+    }
+  }
+}

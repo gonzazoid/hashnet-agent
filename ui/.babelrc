@@ -1,0 +1,17 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "chrome": "73",
+        "node": "11"
+      }
+    }],
+    "@babel/react"
+  ],
+  "plugins": [
+    ["babel-plugin-styled-components", {
+      "minify": true,
+      "transpileTemplateLiterals": false
+    }]
+  ]
+}

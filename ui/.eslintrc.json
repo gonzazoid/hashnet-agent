@@ -1,0 +1,68 @@
+{
+  "root": true,
+  "env": {
+    "es2020": true,
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/all",
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "globals": {
+    "React": "writable"
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./webpack.config.js"
+      }
+    },
+    "react": {
+      "version": "16.13"
+    },
+    "import/extensions": [".js", ".jsx"]
+  },
+  "ignorePatterns": [],
+  "rules": {
+    "react/function-component-definition": "off",
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
+    "quotes": ["error", "double"],
+    "indent": ["error", 2],
+    "import/no-unresolved": ["error", { "ignore": ["next"] }],
+    "linebreak-style": "off",
+    "max-len": ["error", { "code": 150 }],
+    "no-console": "off",
+    "no-alert": "error",
+    "no-empty": "off",
+    "no-nested-ternary": "off",
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "no-underscore-dangle": "off",
+    "no-plusplus": "off",
+    "import/extensions": "off",
+    "class-methods-use-this": "off",
+    "operator-linebreak": ["error", "after"],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-indent-props": ["error", 2],
+    "react/prop-types": "off",
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-props-no-spreading": "off"
+  }
+}
