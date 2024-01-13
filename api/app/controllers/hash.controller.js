@@ -71,7 +71,7 @@ const create = (req, res) => {
 
                 const { absolute, relative } = getPathForHashMessage(hashFunction, hashValue);
                 const chunkMessage = {
-                  hash: id,
+                  hash,
                   range: [0, file.byteLength - 1],
                   files: [{
                     path: relative,

@@ -55,7 +55,7 @@ const findByHash = (hash) => {
 
 const isHashExists = hash => HashMessage
     .find({ hash })
-    .then(data => data.length > 0 ? true : ChunkMessage.find(condition).then(data => data.length > 0));
+    .then(data => data.length > 0 ? true : ChunkMessage.find({ hash }).then(data => data.length > 0));
 
 const resolver = {
   findByHash,
